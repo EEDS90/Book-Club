@@ -71,7 +71,7 @@ This application allows you to find any book and the book details page by using 
 }
 ```
 #### Wireframes:
-https://wireframe.cc/pro/edit/374929
+https://www.figma.com/file/Ku8Gc7LYAqlqF50J501GCC/Untitled?node-id=0%3A1
 
 
 #### MVP:
@@ -87,7 +87,7 @@ https://wireframe.cc/pro/edit/374929
 ### MVP/PostMVP
 
 1) Style the toolbar component using CSS.
-2) Stylw Navivator and Textinput 
+2) Style Navivator and Textinput 
 3) Create the listview
 4) Add the listview pressrow functionality
 5) Creat an input that gives the chosen book detail page
@@ -113,11 +113,21 @@ https://wireframe.cc/pro/edit/374929
 ## Timeframes
 
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Component        | Priority | Estimated Time  | Time Invested | Actual Time |
+| HTML Core Code   | H        | 1hrs            
+| JS Core Code     | H        | 6hrs           
+| Color CSS        | H        | 3hrs            
+| CSS Style        | H        | 3hrs            
+| Pull in data API | H        | 3hrs  
+| Styling button   | H        | 3hrs  
+| Toolbar          | H        | 3hrs  
+| Debugging JS     | H        | 3hrs            
+| EventListener    | H        | 3hrs            
+| Responsive Design| H        | 3hrs            
+| Working with API | H        | 3hrs  
+| Background Design| H        | 3hrs  
+| Finidhing touches| H        | 3hrs
+| Total            | H        | 40hrs            
 
 ## Code Snippet
 
