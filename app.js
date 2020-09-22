@@ -8,10 +8,12 @@ async function getBook(userInput) {
 }
 getBook()
 
-const form = document.querySelector("#search-form");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const inputValue = document.querySelector("#search").value;
-  document.querySelector("#search").value = "";
-  fetchData(inputValue);
-})
+button.addEventListener('click', async () => {
+  let userInput = input.value;
+  const response = await
+  axios.get(`${BASE_URL}/search/${userInput}`); 
+console.log(response.title.results[0]);
+getBook(response.title.results[0])
+});
+
+const button = document.querySelector('.submit-button')
