@@ -29,8 +29,10 @@ body {
     padding: 15px;
     font-size: 15px;
   }
-  input[type="submit"] {
+  #search-button {
+    border-radius: 20px;
     background:#007bfa;
+    height: 50px;
     width: 100px;
     color: white;
     font-family: helvetica;
