@@ -1,25 +1,27 @@
 body {
   text-align: center;
-  background-color: #fd791d;
-  background-size: 900px;
-  
+  background-color: black;
 }
+
 h1{
-  font-size: 55px;
+  font-size: 60px;
   color: yellow;
   font-family: helvetica;
+  letter-spacing: 35px;
 }
+
 h2{
   font-size: 35px;
   color: blue;
   font-family: helvetica;
+  letter-spacing: 15px;
 }
 
 input {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
-  border: 3px solid #32e17c;
+  border: 3px solid purple;
   height: 40px;
   width: 250px;
   border-radius: 50px;
@@ -28,7 +30,7 @@ input {
 
 button {
   text-transform: uppercase;
-  background-color:#fc466b;
+  background-color: red;
   padding: 8px;
   border-radius: 14%;
 }
@@ -46,7 +48,12 @@ button {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+  background-color: orangered;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+  font-family: helvetica;
+  color: black; 
 }
 
 
