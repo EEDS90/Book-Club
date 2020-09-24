@@ -22,22 +22,22 @@ const renderList = books => {
   books.forEach(book => {
     const bookContainer = document.createElement('div');
     bookContainer.className = "book-container";
+
     // here I created an element to display the book title
     const bookTitle = document.createElement('p')
     bookTitle.innerHTML = book.volumeInfo.title
     bookContainer.appendChild(bookTitle)
+
     // This element will display the author
     if (book.volumeInfo.authors) {
-      const bookAuthor = document.createElement('p2')
+      const bookAuthor = document.createElement('h3')
       bookAuthor.innerHTML = book.volumeInfo.authors[0]
       bookContainer.appendChild(bookAuthor)
     }
-    // here I display the movie poster/image
-    if (book.volumeInfo.imageLinks !== "N/A") {
-      const bookImage = document.createElement('img');
-      bookImage.innerHTML = book.volumeInfo.imageLinks
-      bookContainer.appendChild(bookImage);
-    }
+    // here I display the  book ISBN number
+    const bookPublisher = document.createElement('h4')
+    bookPublisher.innerHTML = book.volumeInfo.publisher
+    bookContainer.appendChild(bookPublisher);
 
     bookScript.appendChild(bookContainer);
   })

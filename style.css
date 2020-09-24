@@ -1,8 +1,6 @@
 body {
   text-align: center;
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmh3TOJbL5s4DTRJL6-EPSlI_BfKDGo0VpyA&usqp=CAU");
-  background-repeat: no-repeat;
-  background-color: #5ca6da;
+  background-color: #fd791d;
   background-size: 900px;
   
 }
@@ -13,22 +11,24 @@ h1{
 }
 h2{
   font-size: 35px;
-  color: white;
+  color: blue;
   font-family: helvetica;
 }
 
 input {
-  padding: 10px;
-  border-radius: 3px;
-  border-radius: 10%;
-  width: 200px;
-  margin:5px;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  border: 3px solid #32e17c;
+  height: 40px;
+  width: 250px;
+  border-radius: 50px;
+  padding: 0px 10px;
 }
 
 button {
   text-transform: uppercase;
-  border: #0076fa;
-  background-color: green;
+  background-color:#fc466b;
   padding: 8px;
   border-radius: 14%;
 }
@@ -42,7 +42,11 @@ button {
 }
 
 .book-container {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
 }
 
 
