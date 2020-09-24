@@ -31,8 +31,8 @@ input {
 button {
   text-transform: uppercase;
   background-color: red;
-  padding: 8px;
-  border-radius: 14%;
+  padding: 13px;
+  border-radius: 45%;
 }
 
 .search-section {

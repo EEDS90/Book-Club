@@ -35,15 +35,17 @@ const renderList = books => {
       bookContainer.appendChild(bookAuthor)
     }
     // here I display the book's publisher
-    const bookPublisher = document.createElement('h4')
-    bookPublisher.innerHTML = book.volumeInfo.publisher
-    bookContainer.appendChild(bookPublisher);
-
-    // here I display the ISBN number for the book
-    const bookISBN = document.createElement('h5')
-    bookISBN.innerHTML = book.volumeInfo.industryIdentifiers[1].isbn
-    bookContainer.appendChild(bookISBN);
-
+    if (book.volumeInfo.publisher) {
+      const bookPublisher = document.createElement('h4')
+      bookPublisher.innerHTML = book.volumeInfo.publisher
+      bookContainer.appendChild(bookPublisher);
+    }
+    // here I display the book's published date
+    if (book.volumeInfo.publishedDate) {
+      const bookPublisheddate = document.createElement('h5')
+      bookPublisheddate.innerHTML = book.volumeInfo.publishedDate
+      bookContainer.appendChild(bookPublisheddate);
+    }
     bookScript.appendChild(bookContainer);
   })
 }
