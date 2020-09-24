@@ -17,7 +17,7 @@ button.addEventListener('click', async () => {
 
 const bookScript = document.querySelector(".book-title");
 
-// here I created a container to display the book script.
+// here I created a container.
 const renderList = books => {
   books.forEach(book => {
     const bookContainer = document.createElement('div');
@@ -41,7 +41,7 @@ const renderList = books => {
 
     // here I display the ISBN number for the book
     const bookISBN = document.createElement('h5')
-    bookISBN.innerHTML = book.volumeInfo.industryIdentifiers[1]
+    bookISBN.innerHTML = book.volumeInfo.industryIdentifiers[1].isbn
     bookContainer.appendChild(bookISBN);
 
     bookScript.appendChild(bookContainer);
