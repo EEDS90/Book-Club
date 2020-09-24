@@ -30,14 +30,19 @@ const renderList = books => {
 
     // This element will display the author
     if (book.volumeInfo.authors) {
-      const bookAuthor = document.createElement('h3')
+      const bookAuthor = document.createElement('h')
       bookAuthor.innerHTML = book.volumeInfo.authors[0]
       bookContainer.appendChild(bookAuthor)
     }
-    // here I display the  book ISBN number
+    // here I display the book's publisher
     const bookPublisher = document.createElement('h4')
     bookPublisher.innerHTML = book.volumeInfo.publisher
     bookContainer.appendChild(bookPublisher);
+
+    // here I display the ISBN number for the book
+    const bookISBN = document.createElement('h5')
+    bookISBN.innerHTML = book.volumeInfo.industryIdentifiers[1]
+    bookContainer.appendChild(bookISBN);
 
     bookScript.appendChild(bookContainer);
   })
